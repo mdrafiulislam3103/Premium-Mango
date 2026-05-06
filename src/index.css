@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-mango: #FFB300;
+  --color-mango-dark: #F57F17;
+  --color-leaf: #2E7D32;
+  --color-leaf-light: #4CAF50;
+  --color-earth: #4E342E;
+  --color-cream: #FFFDE7;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-earth font-sans;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display font-bold;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-bengali: "Hind Siliguri", sans-serif;
+}
+
+.font-bengali {
+  font-family: var(--font-bengali);
+}
